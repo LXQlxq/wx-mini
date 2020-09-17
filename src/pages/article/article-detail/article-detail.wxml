@@ -1,0 +1,24 @@
+<!--微页面-->
+<view id="wrapper">
+    <view class="title">
+        <text >{{detail.title}}</text>
+    </view>
+    <view class="category">
+      <text >{{detail.category.name}}</text> |
+      <text >{{detail.subcategory.name}}</text>
+    </view>
+    <view class="info">
+        <view class="author-avatar" wx-if="{{detail.image}}">
+          <image class="img" src="{{detail.image.url}}"></image>
+        </view>
+        <text>muuzi</text>
+        <text>{{detail.create_time}}</text>
+    </view>
+
+
+
+
+    <!-- S 文章内容-->
+        <rich-text wx:if="{{detail}}"  nodes="{{detail.intro}}" class="intro"></rich-text>
+    <!-- E 文章内容-->
+</view>

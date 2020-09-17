@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index/index",
+    "pages/index/template/template",
+    "pages/index/about/about",
+    "pages/user/user/user",
+    "pages/article/article-detail/article-detail",
+    "pages/templates/templates-detail/templates-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1976D2",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F3F3F3"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#9B9B9B",
+    "selectedColor": "#ff2741",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "text": "首页",
+        "iconPath": "assets/image/shop.png",
+        "selectedIconPath": "assets/image/shop-r.png"
+      },
+      {
+        "pagePath": "pages/index/template/template",
+        "text": "网站模板",
+        "iconPath": "assets/image/class.png",
+        "selectedIconPath": "assets/image/class-r.png"
+      },
+      {
+        "pagePath": "pages/user/user/user",
+        "text": "我的",
+        "iconPath": "assets/image/user.png",
+        "selectedIconPath": "assets/image/user-r.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,6 @@
+{
+    "name": "wx-mini",
+    "version": "0.1.0",
+    "service": "http://127.0.0.1:8360"
+
+}

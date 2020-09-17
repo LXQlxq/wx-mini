@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "模板详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "preview": "../../../component/preview/preview"
+  }
+}

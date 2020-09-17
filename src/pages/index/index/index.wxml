@@ -1,0 +1,46 @@
+<!--微页面-->
+<view id="wrapper">
+    <!-- S 轮播图组件-->
+      <swiper indicator-dots="{{banner.length}}"autoplay="true" interval="2000" duration="500" class="swiper-box">
+        <block wx:for="{{banner}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item.banner_image.url}}" class="img"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    <!-- E 轮播图组件-->
+
+    <view wx:if="{{dataList.length !==0}}" class="article">
+
+        <!-- S 文章列表 -->
+        <view wx:for="{{dataList}}" wx:for-index="idx" wx:key="*this">
+
+            <view wx:for="{{dataList[idx]}}"  wx:for-index="idx" wx:key="*this" class="article-item" mark:item="{{item}}" bindtap="jumpToDetail">
+               <view class="article-info">
+                    <view class="author">
+                        <image src="{{item.image.url}}"></image>
+                        <text>muuzi</text>
+                    </view>
+                    <text class="subcategorys" wx:if="{{item.subcategorys}}">{{item.subcategorys.name}}</text>
+               </view>
+
+                <view class="article-content">
+                    <view class="img-box" wx:if="{{item.image}}">
+                        <image src="{{item.image.url}}"></image>
+                    </view>
+                    <view>
+                        <text>{{item.title}}</text>
+                        <rich-text  nodes="{{item.intro}}" class="intro"></rich-text>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <!-- E 文章列表-->
+        <view class="loadingbox" hidden="{{!show}}">
+            正在加载下一页数据
+        </view>
+    </view>
+
+</view>

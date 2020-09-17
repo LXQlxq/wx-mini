@@ -1,0 +1,29 @@
+<!--微页面-->
+<view id="wrapper">
+    <view wx:if="{{dataList.length !==0}}" class="article">
+
+        <!-- S 文章列表 -->
+        <view wx:for="{{dataList}}" wx:for-index="idx" wx:key="*this" class="article-box">
+
+            <view wx:for="{{dataList[idx]}}"  wx:for-index="idx" wx:key="*this" class="article-item" mark:item="{{item}}" bindtap="jumpToDetail">
+
+
+                <view class="article-content">
+                    <view class="img-box" wx:if="{{item.cover_image}}">
+                        <image src="{{item.cover_image.url}}"></image>
+                    </view>
+                    <view>
+                        <text>{{item.title}}</text>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+        <!-- E 文章列表-->
+        <view class="loadingbox" hidden="{{!show}}">
+            正在加载下一页数据
+        </view>
+    </view>
+
+</view>

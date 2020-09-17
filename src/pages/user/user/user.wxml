@@ -1,0 +1,3 @@
+<view id="user">
+   <web-view src="https://juejin.im/user/5c7a104351882562851b6733"></web-view>
+</view>

@@ -1,0 +1,11 @@
+<view id="classification" class="{{classData.type == 'upper_lower' ? '' : 'hiddens'}}">
+   <view class="text_btn">
+        <text>
+            基本信息
+            来自广东，现居广州，昵称 Muuzi。
+            涉及方向有：Vue、React、JavaScript、小程序、web网站开发等。
+            爱生活、爱音乐、爱设计、爱编程。
+            四叶草，愿生活像四叶草一样幸运美好。
+        </text>
+   </view>
+</view>
